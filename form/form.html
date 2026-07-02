@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>sport</h2>
+    <form action="action.html" method="get">
+    <fieldset>
+        <legend>
+       <h4>  athelethic information </h4>
+        </legend>
+        <ul>
+            <li>
+                <label for="name"><strong>name</strong></label>
+                <input type="text" name="username" id="name">
+            </li>
+
+            <li>
+                <label for="school"><strong>school</strong></label>
+                <input type="text" name="schoolname" id="school">
+            </li>
+            <li>
+                <label for="sport"><strong>sport</strong></label>
+                <input type="text" name="sportname" id="sport">
+            </li>
+            <li>
+                <label for="parent"><strong>parent</strong></label>
+                <input type="text" name="parentname" id="parent">
+            </li>
+            <li>
+                <label for="contact_no"><strong>contact</strong></label>
+                <input type="text" name="contact_no" id="contact_no">
+                </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h4>
+                <strong> history for athletes </strong>
+            </h4>
+        </legend>
+            <ul>
+                <li>
+                    <label for="history_name"> <b>history of concussion</b></label>
+                    <input type="radio" name="history_name" value="yes" id="yes"> <label for="yes"><b>yes</b></label>
+                    <input type="radio" name="history_name" value="no"  id="no"> <label for="no"><b>no</b></label>
+
+                </li>
+                <li> <label for="previous"><strong> previous sugeries</strong></label>
+                <input type="text" name="previous" id="previous"
+                placeholder="sugeries names.."></li>
+                <li>
+                    <label for="fracture"><b> any bone fracture</b></label>
+                    <input type="radio" name="fracture" value="yes"> <label for="yes"><strong>yes</strong></label>
+                    <input type="radio" name="fracture" value="no"> <label for="no"><b>no</b></label>
+                </li>
+                <li> 
+                    <label for="Asthama"> <b>asthama or breathing problem       </b></label>
+                    <input type="radio" name="Asthama" value="yes"> <label for="yes"><strong>yes</strong>
+                    </label>
+                    <input type="radio" name="Asthama" value="no"> <label for="no"><strong>no</strong></label>
+                </li>
+            </ul>
+    </fieldset>
+<fieldset>
+    <legend>
+        <h4> fitness assessment</h4>
+    </legend>
+    <table>
+    <tr>
+        <th>category</th>
+        <th>pass</th>
+        <th>fail</th>
+        <th>comment</th>
+    </tr>
+    <tr>
+        <td> <strong>cardivascular</strong>
+        </td>
+        <td><input type="radio" name="car" id="yes" value="no"> </td>
+        <td><input type="radio" name="car" id="no" value="no"> </td>
+        <td><input type="text" name="car_comm" id="car_comm" > </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <strong>flerxiblity</strong>
+        </td>
+        <td><input type="radio" name="flex" id="yes" value="no"> </td>
+        <td><input type="radio" name="flex" id="no" value="no"> </td>
+        <td><input type="text" name="flex_comm" id="flex_comm" > </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <strong>strng</strong>
+        </td>
+        <td><input type="radio" name="str" id="yes" value="no"> </td>
+        <td><input type="radio" name="str" id="no" value="no"> </td>
+        <td><input type="text" name="str_comm" id="str_comm" > </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <strong>endrce</strong>
+        </td>
+        <td><input type="radio" name="end" id="yes" value="no"> </td>
+        <td><input type="radio" name="end" id="no" value="no"> </td>
+        <td><input type="text" name="end_comm" id="end_comm" > </td>
+    </tr>
+    
+
+</table>
+</fieldset>
+    <fieldset>
+        <legend>
+            <h4>
+                doctor recommnendation 
+            </h4>
+        </legend>
+        <ul>
+            <li><label for="sports"><b>clardred for sport</b></label>
+                    <input type="radio" name="sports" value="yes"> <label for="yes"><strong>yes</strong></label>
+                    <input type="radio" name="sports" value="no"> <label for="no"></label><b>no</b></li>
+            <li> <label for="reason"><b>not cleared or reason</b></label>
+                <input type="text" name="reason" id="reason"></li>
+
+            <li><label for="sign"><strong>signature</strong></label>
+                <input type="text" name="sign" id="sign">
+                
+                    <label for="date"><strong>Date</strong></label>
+                <input type="date" name="date" id="date"></li>
+                
+        </ul>
+    </fieldset>
+    
+</fieldset>
+<fieldset>
+    <legend>select dep</legend>
+    <select name="dep_name" id="dep_name">
+        <option value="null">select ur dept</option>
+        <option value="AIML">AIML</option>
+        <option value="CSE">CSE</option>
+        <option value="AIDS">AIDS</option>
+        <option value="DS">DS</option>
+    </select>
+
+</fieldset>
+<fieldset>
+    <legend>
+        select hobby
+    </legend>
+    <label for="sport">sport</label>
+    <input type="checkbox" id="sport" name="hb" value="sport">
+
+    <label for="gaming">gaming</label>
+    <input type="checkbox" id="gaming" name="hb1" value="gaming">
+    <label for="reading">reading</label>
+    <input type="checkbox" id="reading" name="hb2" value="reading">
+</fieldset>
+<fieldset> 
+    <legend>textarea</legend>
+    
+    <label for="adrrdes"><strong>address</strong></label>
+    <textarea name="adr" id="adr" row="30" col="20" placeholder="ads"></textarea>
+    
+    
+    <label for="email">email</label>
+    <input type="email" id ="email" name="email">
+
+    <label for="pass">password</label>
+    <input type="password" id ="pass" name="pass">
+
+    <label for="num">number</label>
+    <input type="number" id="num" name="num">
+
+    <label for="date">date&time</label>
+    <input type="date" id="date" name="date">
+
+    <label for="time1"> time</label>
+    <input type="time" id="time1" name="time1">
+    <ul>
+
+<li> <label for="profile_img">profile</label>
+    <input type="file" id="profile_img" accept=".jpg , .png, .jpeg"></li> 
+    
+    <li> <label for="resume">resume</label>
+    <input type="file" id="resume" accept=".pdf">
+    </li>
+    
+<li><label for="report">report</label>
+    <input type="file" id="report" accept=".docx"></li>
+    
+    <li><label for="excel">excel</label>
+    <input type="file" id="excel" accept=".xlsx">
+    </li>
+    </ul>
+</fieldset>
+
+    <input type="submit"value="submit">
+</form>
+</body>
+</html>
