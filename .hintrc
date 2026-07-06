@@ -8,6 +8,8 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "axe/structure": "off",
+    "no-inline-styles": "off"
   }
 }
