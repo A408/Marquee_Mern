@@ -12,6 +12,12 @@
     "axe/structure": "off",
     "no-inline-styles": "off",
     "disown-opener": "off",
-    "meta-viewport": "off"
+    "meta-viewport": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ]
   }
 }
