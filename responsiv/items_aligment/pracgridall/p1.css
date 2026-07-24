@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+#container{
+
+    width:1200px;
+
+    display:grid;
+
+    grid-template-columns:330px 1fr 1fr;
+
+    grid-template-rows:320px 260px 300px;
+
+    gap:20px;
+
+}
+
+/* ================= COMMON ================= */
+
+.items{
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    padding:30px;
+
+    position:relative;
+
+}
+
+.items h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:18px;
+
+}
+
+.items h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#111;
+
+    margin-bottom:20px;
+
+}
+
+.items p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+    color:#333;
+
+    margin-top:20px;
+
+}
+
+/* ================= ITEM 1 ================= */
+
+#item-1{
+
+    background:#b7ace7;
+
+    grid-row:span 2;
+
+}
+
+.custom-images{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.custom-images img{
+
+    width:150px;
+
+    border-radius:18px;
+
+}
+
+.toolbar{
+
+    width:100%;
+
+    margin-top:25px;
+
+    border-radius:18px;
+
+}
+
+#item-1 p{
+
+    margin-top:30px;
+
+}
+
+/* ================= ITEM 2 ================= */
+
+#item-2{
+
+    background:#f68cb1;
+
+    grid-column:span 2;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+#item-2 .text{
+
+    width:45%;
+
+}
+
+#item-2 .image{
+
+    width:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+#item-2 .image img{
+
+    width:95%;
+
+}
+
+/* ================= ITEM 3 ================= */
+
+#item-3{
+
+    background:#c8d98b;
+
+}
+
+.wallet-images{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.wallet-images img{
+
+    width:100%;
+
+    border-radius:14px;
+
+}
+
+/* ================= ITEM 4 ================= */
+
+#item-4{
+
+    background:#f9df73;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.inbox-img{
+
+    width:100%;
+
+    margin-top:10px;
+
+    border-radius:20px;
+
+}
+
+/* ================= ITEM 5 ================= */
+
+#item-5{
+
+    background:#f6a677;
+
+    grid-column:span 2;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+#item-5 .left{
+
+    width:38%;
+
+}
+
+.gift-images{
+
+    width:58%;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.gift-images img{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+/* ================= ITEM 6 ================= */
+
+#item-6{
+
+    background:#bdd6e2;
+
+}
+
+.reminder-img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+
+#container{
+
+    width:95%;
+
+    grid-template-columns:1fr;
+
+    grid-template-rows:auto;
+
+}
+
+#item-1,
+#item-2,
+#item-5{
+
+    grid-column:span 1;
+
+    grid-row:span 1;
+
+}
+
+#item-2,
+#item-5{
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+#item-2 .text,
+#item-2 .image,
+#item-5 .left,
+.gift-images{
+
+    width:100%;
+
+}
+
+}
